@@ -94,6 +94,19 @@
         </p>
         
         
+        <h1>HW2: Reflections on software engineering practices</h1>
+        
+        <p>
+            All three of the assigned readings, in one way or another, discuss the development costs that accompany any software development process and the methods that can help reduce and/or increase these costs. “No Silver Bullet” highlights this fact by stating that “the cost of software has always been development cost, not replication cost” (Brooks 17). However, the article also makes the point that software progress is not necessarily slow due to development costs. Rather, the high speed of hardware development makes the progress of software appear slow in comparison to hardware’s rapid innovations (Brooks 11). Nonetheless, methods such as code replication, top-down design, and version-controlled storage of files all aid in decreasing the amount of time it takes to push out usable software. 
+        </p>
+        
+        <p>
+            One such example of decrease in development cost is illustrated in George V. Neville-Neil’s “Kode Vicious”. The article states that the best way to avoid ending up in the pits of cherry-picking is to be sure to periodically merge whatever code that a developer is working against. In other words, a developer should “have a merged and tested branch ready to go when it is time for [the developer’s] project to resynchronize with the head of the development tree” (Neville-Neil 33). A related idea is reflected by Google’s practices in Rachel Potvin and Josh Levenberg’s article, “Why Google Stores Billions of Lines of Code in a Single Repository”. Google implements the trunk-based development strategy in order to efficiently manage their large repository, thereby decreasing development costs. This method also helps to alleviate the difficulties associated with the merging of branches (as in “Kode Vicious”), but does so by attempting to altogether avoid the “painful merges that often occur when it is time to reconcile long-lived branches” (82). Rather than developing on the branches themselves, revisions (such as bug fixes) are developed on mainline and subsequently cherry-picked into the branch if necessary. Because of the extremely vast repository that Google works out of (which is not the case for all software developers), this method is especially beneficial, as it allows newly committed code to be immediately seen and used by all other Google developers (82). Although there exist additional benefits to this trunk-based approach, there also exists drawbacks, such as the added costs of developing automated testing and “pre-submit” infrastructure. 
+        </p>
+        
+        <p>This reflects the common trend of trade-off analysis throughout the software development process in general, as reflected in “No Silver Bullet”. The article states that software development is the only technology where one can choose to gain from “either improved performance or in reduced costs”, suggesting that improved performance comes with a host of development costs while reduced costs comes with a decrease in software performance (Brooks 11). This is further illustrated by the fact that “Google invests significant effort in maintaining code health to address some issues related to codebase complexity and dependency management” thanks to its large repository (Potvin & Levenberg 86). Despite potential benefits of working out of smaller repositories, Google has determined that the benefits of maintaining its current working repository outweighs its current costs of maintenance or that of downsizing into a non-monolithic source repository. This example suggests part of the reasoning behind Brooks’ belief that no “silver bullets” are likely to appear anytime soon due to the very nature of software, such as its trade-offs, among other factors.</p>
+        
+        
 
     </body>
 
