@@ -106,6 +106,65 @@
         
         <p>This reflects the common trend of trade-off analysis throughout the software development process in general, as reflected in “No Silver Bullet”. The article states that software development is the only technology where one can choose to gain from “either improved performance or in reduced costs”, suggesting that improved performance comes with a host of development costs while reduced costs comes with a decrease in software performance (Brooks 11). This is further illustrated by the fact that “Google invests significant effort in maintaining code health to address some issues related to codebase complexity and dependency management” thanks to its large repository (Potvin & Levenberg 86). Despite potential benefits of working out of smaller repositories, Google has determined that the benefits of maintaining its current working repository outweighs its current costs of maintenance or that of downsizing into a non-monolithic source repository. This example suggests part of the reasoning behind Brooks’ belief that no “silver bullets” are likely to appear anytime soon due to the very nature of software, such as its trade-offs, among other factors.</p>
         
+
+
+
+        <h1>HW3: Chapters 11 & 12</h1>
+
+        <p>            
+            <strong>11.4</strong>        
+        </p>
+
+        <p>The common characteristic of all architectural styles that are geared to supporting software fault tolerance is that the system architecture is designed to include redundant and diverse hardware and software. The importance of this can be seen through the replicated server approach, where redundancy, but not usually diversity, is provided. Because server hardware is often identical and run the same versions of software, they can cope with hardware failures but not the software failures that are not localized to a single machine. Thus, both diverse hardware and software is necessary for handling software design failure. Benefits of redundancy can be illustrated in replicated servers through the preserved system integrity if the hardware of one server were to fail and another server be forced to take over the unprocessed transactions.
+
+        </p>
+
+        <p>            
+            <strong>11.7</strong>        
+        </p>
+        
+        <p>
+            It has been suggested that the control software for a radiation therapy machine, used to treat patients with cancer, should be implemented using N-version programming. Because of the currently extremely high costs for medical treatment, especially treatments such as radiation, I think this would be an acceptable suggestion, as N-version programming may be less expensive than self-checking architectures in systems for which a high level of availability is required. This decrease in cost for this technology may then help to lower the cost of radiation treatment for cancer patients. Although development costs would still be high due to the requirement for several different teams to develop different software versions, it would still be cheaper than self-checking architecture and would even add to the reliability of the machine. (This reliability is important because an overdose of radiation to a patient could be fatal.) Of course, this assumes that there is a need for high availability of the machine, which I believe there would be considering the high prevalence of cancer. Although reliability is often valued over availability in the medical field, I believe that both can be achieved in this specific case without the need for compromise.
+        </p>
+
+        <p>            
+            <strong>11.9</strong>        
+        </p>
+
+        <p>
+            You should explicitly handle all exceptions in a system that is intended to have a high level of availability in order to ensure that program exceptions do not cause system failures, as well as to continue normal operation after the exception has been processed. Because the system has a high level of availability, it is consistently relied on to function properly. Each time that an exception cannot be properly handled, someone is losing time and money that could be put towards a better use of time due to something that could have been avoided in the first place.
+        </p>
+
+        <p>            
+            <strong>12.5</strong>        
+        </p>
+
+        <p>
+            Five possible functional system requirements generated from the system safety requirements:
+        </p>
+
+        <p>
+            1.	The system must allow for user override in case of an emergency or some unpredicted situation.
+        </p>
+
+        <p>
+            2.	The amount of pressure to be applied to the brakes should be regulated based on current speed of the train and/or distance. For example, a braking that is too hard may also cause safety hazards for passengers, may cause damage to the train or its cargo, etc.
+        </p>
+
+        <p>
+            3.	The speed of the train should be constantly calculated by the system.
+        </p>
+
+        <p>
+            4.	A warning should be given to the train conductor in the event that there is a red light and/or the brakes need to be applied. A warning should also be given if there is a change in the speed limit ahead.
+        </p>
+
+        <p>
+            5.	The system should offer alternate routes (those without red lights) for the conductor to take in the event that a segment of track is signaled with a red light.
+        </p>
+
+
+
         
 
     </body>
