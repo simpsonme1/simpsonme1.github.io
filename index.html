@@ -260,6 +260,7 @@
         software while making it easier to access user feedback in the first place.</p>
 
 
+
         <h1>HW7: Chapter 5 and 6</h1>
 
         <p><strong>5.3</strong></p>
@@ -335,6 +336,61 @@
 
 
 
+            <h1>HW9: Chapter 8 and reflections on testing</h1>
+
+            <p><strong>8.7</strong></p>
+            <p>Write a scenario that could be used to help design tests for the wilderness weather station system.</p>
+            <p>Joe is a meteorologist responsible for monitoring several of the wilderness weather stations to ensure their proper
+                functioning and to keep up proper maintenance on them. Each Monday morning, he logs in as an authorized user and 
+                administrator for his assigned stations. Joe then reviews the collected data for any abnormalities for each instrument.
+                He finds an abnormality in one of the instrument's collected data readings and reports this to the various other teams
+                that work with the system, including the local weather forecasting team. He flags this as an abnormality in the system.
+                Then, Joe ensures that all the data was correctly transmitted to the data management system and reports any errors if
+                not correctly transmitted. Then, Joe visits each station at its location to ensure no physical damage has been done to 
+                it or the instruments that may interfere with the proper data collection and functioning of each one. If damage is thought to be
+                done to the station or instrument, Joe takes it back to the lab to be worked on or replaced. If a station or one of its
+                instruments is replaced, Joe must then update the new identification number for the new station/instrument in the weather 
+                station system. Lastly, Joe updates his findings for the week to the weather station database.
+            </p>
+    
+            <p><strong>8.10</strong></p>
+            <p>A common approach to system testing is to test the system until the testing budget is exhausted and then deliver 
+                the system to customers. This approach seems extremely unethical, especially considering the fact that most projects
+                end up over budget to begin with. Testing, as possibly the most critical factor of the software development process,
+                should not be pushed to the back burner to receive what is left over of the budget, especially since testing is often
+                times the last, or one of the last, phases of development for software. Therefore, there would be minimal amount of money
+                to provide for the testing of software when completed in this manner. This becomes an especially important matter to consider
+                when software is developed for people whose safety could depend on it. For example, delivering an inadequately tested system
+                to the health care industry could potentially harm or kill patients, depending on the type of bug that was not found in the 
+                testing phase. Even if people's health, for example, does not depend on the proper functioning of the system, it is unethical
+                to knowingly provide somebody software that has been inadequately tested. Ultimately, the customer is paying for the
+                development of software, and this includes a proper testing phase. Otherwise, the customer would not be receiving what
+                they paid for and are expecting to receive.
+            </p>
+    
+            <p><strong>Reflections on <em>Intro to Testing</em></strong></p>
+            <p>One interesting note about this reading is the statement that programmers often believe that the effort put into testing
+                seems wasted if no bugs are revealed. Considering that testing consumes (or at least <em>should</em> consume) at least half the labor
+                put into producing a functioning program, this feeling of wasted effort seems understandable. However, one concept that stood
+                out to me in the reading is the problem of subtle bugs that are not as obvious as "easy" bugs, yet potentially more 
+                destructive. Therefore, it seems that if no bugs are found, then effort was not wasted but, instead, most likely not enough.
+                This idea can also be seen in the Pesticide Paradox and the Complexity Barrier discussed in the chapter. Even though it may
+                seem as though something is bug-free and functional, the pesticide paradox suggests that there are most likely remaining bugs
+                that have not been found yet - the aforementioned subtle bugs that were "immune" to previous testing. The complexity barrier
+                adds to this problem, partially due to all the "bells and whistles" that people can't seem to get enough of, causing further complexity
+                in not only the programming but the testing itself as well as discovery of these pesky, subtle bugs. In fact, my dad had previously
+                worked for a software development company that had one of these subtle bugs in their software for years before he even worked there. This 
+                bug caused major problems, including having parents of college students pay the tuition bills for students who did not
+                belong to them. This bug occured at least once a week. It was so difficult to both find and reproduce that the company
+                offered overtime pay and provided dinner on special designated nights to any employee who wanted to stay afterhours to try
+                to find and fix the bug. After five years of working there and nobody in the company being able to find the bug, my dad was finally
+                able to discover and reproduce it. Turns out, the difficulty was all due to the extreme amount of "bells and whistles"
+                programmed into the code. This anecdote furthers the author's point and is interesting because it allows for a real-life example 
+                of this discussion from the reading.
+            </p>
+
+
+
         <h1>HW11: Chapter 9</h1>
 
         <p><strong>9.8</strong></p>
@@ -382,61 +438,6 @@
 
         <img src=".\Call Log.png" id="call log" />
         <img src=".\Vehicle Discovery.png" id="vehicle discovery" />
-
-
-        <h1>HW9: Chapter 8 and reflections on testing</h1>
-
-        <p><strong>8.7</strong></p>
-        <p>Write a scenario that could be used to help design tests for the wilderness weather station system.</p>
-        <p>Joe is a meteorologist responsible for monitoring several of the wilderness weather stations to ensure their proper
-            functioning and to keep up proper maintenance on them. Each Monday morning, he logs in as an authorized user and 
-            administrator for his assigned stations. Joe then reviews the collected data for any abnormalities for each instrument.
-            He finds an abnormality in one of the instrument's collected data readings and reports this to the various other teams
-            that work with the system, including the local weather forecasting team. He flags this as an abnormality in the system.
-            Then, Joe ensures that all the data was correctly transmitted to the data management system and reports any errors if
-            not correctly transmitted. Then, Joe visits each station at its location to ensure no physical damage has been done to 
-            it or the instruments that may interfere with the proper data collection and functioning of each one. If damage is thought to be
-            done to the station or instrument, Joe takes it back to the lab to be worked on or replaced. If a station or one of its
-            instruments is replaced, Joe must then update the new identification number for the new station/instrument in the weather 
-            station system. Lastly, Joe updates his findings for the week to the weather station database.
-        </p>
-
-        <p><strong>8.10</strong></p>
-        <p>A common approach to system testing is to test the system until the testing budget is exhausted and then deliver 
-            the system to customers. This approach seems extremely unethical, especially considering the fact that most projects
-            end up over budget to begin with. Testing, as possibly the most critical factor of the software development process,
-            should not be pushed to the back burner to receive what is left over of the budget, especially since testing is often
-            times the last, or one of the last, phases of development for software. Therefore, there would be minimal amount of money
-            to provide for the testing of software when completed in this manner. This becomes an especially important matter to consider
-            when software is developed for people whose safety could depend on it. For example, delivering an inadequately tested system
-            to the health care industry could potentially harm or kill patients, depending on the type of bug that was not found in the 
-            testing phase. Even if people's health, for example, does not depend on the proper functioning of the system, it is unethical
-            to knowingly provide somebody software that has been inadequately tested. Ultimately, the customer is paying for the
-            development of software, and this includes a proper testing phase. Otherwise, the customer would not be receiving what
-            they paid for and are expecting to receive.
-        </p>
-
-        <p><strong>Reflections on <em>Intro to Testing</em></strong></p>
-        <p>One interesting note about this reading is the statement that programmers often believe that the effort put into testing
-            seems wasted if no bugs are revealed. Considering that testing consumes (or at least <em>should</em> consume) at least half the labor
-            put into producing a functioning program, this feeling of wasted effort seems understandable. However, one concept that stood
-            out to me in the reading is the problem of subtle bugs that are not as obvious as "easy" bugs, yet potentially more 
-            destructive. Therefore, it seems that if no bugs are found, then effort was not wasted but, instead, most likely not enough.
-            This idea can also be seen in the Pesticide Paradox and the Complexity Barrier discussed in the chapter. Even though it may
-            seem as though something is bug-free and functional, the pesticide paradox suggests that there are most likely remaining bugs
-            that have not been found yet - the aforementioned subtle bugs that were "immune" to previous testing. The complexity barrier
-            adds to this problem, partially due to all the "bells and whistles" that people can't seem to get enough of, causing further complexity
-            in not only the programming but the testing itself as well as discovery of these pesky, subtle bugs. In fact, my dad had previously
-            worked for a software development company that had one of these subtle bugs in their software for years before he even worked there. This 
-            bug caused major problems, including having parents of college students pay the tuition bills for students who did not
-            belong to them. This bug occured at least once a week. It was so difficult to both find and reproduce that the company
-            offered overtime pay and provided dinner on special designated nights to any employee who wanted to stay afterhours to try
-            to find and fix the bug. After five years of working there and nobody in the company being able to find the bug, my dad was finally
-            able to discover and reproduce it. Turns out, the difficulty was all due to the extreme amount of "bells and whistles"
-            programmed into the code. This anecdote furthers the author's point and is interesting because it allows for a real-life example 
-            of this discussion from the reading.
-        </p>
-        
 
 
     </body>
