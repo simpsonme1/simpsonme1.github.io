@@ -474,7 +474,22 @@
 
         <h1>HW14: Chapter 18</h1>
 
-        <p><strong>18.4</strong></p>
+        <p><strong>18.4: Define an interface specification for the Currency Converter and Check credit rating services shown in Figure 18.9.</strong></p>
+
+        <p><u>Method: Currency Converter</u> This service converts a given amount of money from one currency type to another.</p>
+        <p><em>Operation:</em> convert</p>
+        <p><em>Input:</em> double/float amount, String originalCurrencyType, String convertedCurrencyType</p>
+        <p><em>Output:</em> double/float convertedAmount</p>
+        <p><em>Exceptions:</em> input amount not a double, input has too many decimal places, input is null, currency type does not exist, input is a negative amount</p>
+
+
+
+        <p><u>Method: Check Credit Rating</u> This service checks a person's credit score given identifiable information for the person.</p>
+        <p><em>Operation:</em> checkCreditRating</p>
+        <p><em>Input:</em> Integer socialSecurityNumber, String address, String name, Boolean responseToSecurityQuestions</p>
+        <p><em>Output:</em> Boolean isThisPersonWhoTheySayTheyAre Integer creditScore</p>
+        <p><em>Exceptions:</em> null response to security questions, invalid SS number and/or address, the person is under 18 and/or does not yet have credit</p>
+
         
 
 
